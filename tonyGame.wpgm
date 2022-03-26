@@ -1,0 +1,21 @@
+import wollok.game.*
+import wollok.lang.*
+import escenario.*
+
+program TonyGame {
+	//  CONFIG	
+	game.title("Tony: Surviving the Horde")
+	//game.cellSize(10)		// tamaño de celda 10 pixeles para que no quede la pantalla tan grande	// fondo del tablero
+	game.height(11)
+	game.width(10)
+
+	//Programar evento
+	const sonido = game.sound("sonidos/musica.mp3")
+	game.schedule(200, { sonido.play()} )
+
+	const portada = new Portada()
+	escenario.iniciarNivel(portada)
+
+ 	//COMIENZA
+ 	game.start()
+}
