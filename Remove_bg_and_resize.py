@@ -22,8 +22,8 @@ def resizing(f,f_saved,x=80,y=80):
         img.save(f_img_save)
         shutil.move(r'Sin procesar' + '\\' + file,r'Ya usado y procesado' + '\\' + file )
 
-f_SP = r'C:\Users\Lucia\Desktop\Ingeniería biomédica\Algoritmos 1\Imagenes\Sin procesar'
-f_saved = r'C:\Users\Lucia\Desktop\Ingeniería biomédica\Algoritmos 1\Imagenes\Procesadas'
+f_SP = r'path\to\Imagenes\Sin procesar'
+f_saved = r'path\to\Imagenes\Procesadas'
 
 
 
@@ -72,10 +72,10 @@ if __name__ == "__main__":
    
     try:
     
-        api_key = "3kopPDbNPMj85cBnSSETDY4e" # "yhXTdWvD1oLEKsVoTWW57GvB" ya gastada
-        f_SE_SP = r'C:\Users\Lucia\Desktop\Ingeniería biomédica\Algoritmos 1\Imagenes\Sin Extraer y Sin procesar'
-        f_SP = r'C:\Users\Lucia\Desktop\Ingeniería biomédica\Algoritmos 1\Imagenes\Sin procesar'
-        f_saved = r'C:\Users\Lucia\Desktop\Ingeniería biomédica\Algoritmos 1\Imagenes\Procesadas'
+        api_key = "" # "yhXTdWvD1oLEKsVoTWW57GvB" ya gastada
+        f_SE_SP = r'path\to\Imagenes\Sin Extraer y Sin procesar'
+        f_SP = r'path\to\Imagenes\Sin procesar'
+        f_saved = r'path\to\Imagenes\Procesadas'
 
         extraction("conteo.txt",api_key)
 
